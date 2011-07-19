@@ -1,0 +1,46 @@
+#wrap
+{
+	width:100%;
+	height:600px;
+}
+
+#left_content
+{
+	padding: 0;
+	position: absolute;
+	width: 200px;
+	background-color: #FFFFFF;
+	height: inherit;
+}
+
+#header
+{
+	font-size:20px;
+	font-weight:bold;
+}
+
+#images
+{
+	padding-left:10px;
+	position:relative;
+	left:200px;
+	overflow:hidden;
+}
+
+.image_caption
+{
+	width: 75%;
+}
+
+.image_wrap
+{
+	float:left;
+	margin-right:5px;
+	max-width: 900px;
+    overflow: hidden;
+}
+
+.gallery_image
+{
+	max-width: 900px;
+}

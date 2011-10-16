@@ -81,7 +81,13 @@ function get_directories()
 	{
 		$file		=	$files[$i];
 		$fileName	=	explode('_',$file);
-		$activeStatus		=	($file[0]!='.'&&$currently_at!=$file&&(!$loadFirst&&position==1)) ? '' : 'active';
+		
+		
+		$activeStatus		=	($currently_at!=$file) ? 'inactive' : 'active';
+		$activeStatus       =   ($loadFirst&&$position==1) ? 'active' : 'inactive';
+		 
+		$activeStatus		=	$currently_at==$file ? 'active' : $activeStatus;
+ 		
 		print "<div class='menu_item menu_$position'><a class='menu_link $activeStatus' href='index.php?gallery=$file'>".$fileName[1]."</a></div>";
 		array_push($galleries,$file);
 		$position++;
